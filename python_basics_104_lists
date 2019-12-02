@@ -1,0 +1,57 @@
+#lists in python
+#lists are ordered by index
+## aka --> arrays or (as objects in JS(javascript))
+#Syntax
+#declare lists using []
+    # separate objects using a coma ,
+crazy_x_landlords = ['Sr.Julio','Jane','Alfred','Marksons']
+print(crazy_x_landlords)
+print(type(crazy_x_landlords))
+# how to access 1 record number in the list
+#specifically number 3 in list
+print(crazy_x_landlords[2])
+print(crazy_x_landlords[0])
+#accessing the last num on the list
+print(crazy_x_landlords[-1])
+#changing a record on the list
+#new list of places to live
+places_to_live = ['California','Rio de Janeiro','Melbourne','Manchester','Singapore']
+print(places_to_live[3])
+#Reassign a index
+places_to_live[3] = 'Hawaii'
+print(places_to_live[3])
+# method.append(object)
+places_to_live.append('LA')
+print(len(places_to_live))
+#insert to a specific number in the list using .insert(index,object)
+places_to_live.insert(0,'Lisboa')
+print(places_to_live)
+#.pop(index)
+#removes from list at specifix index
+places_to_live.pop(3)
+print(places_to_live)
+# List slicing
+#used to manage lists
+#prints from index to end of list
+print(places_to_live[3:])
+#print from index to the start of the list, does not include last value
+print(places_to_live[:3])
+#print from specified index to second specified index ( non inclusive if last)
+print(places_to_live[0:3])
+#skip slicing
+new_list = [1,2,4,5,6,7,8,9,10,11,12,13,14]
+print(new_list[0::3])
+print(places_to_live[0::2])
+print(new_list[2:10:3])
+print(new_list)
+#TUples
+#immutable lists
+#syntax
+    #defined using (object,object)
+mortal_enemies = ('Mario','Sailormoon','Moon cake','Jerry','Berry')
+print(type(mortal_enemies))
+mortal_enemies[0] = 'Goku'
+
+new_list1 = list(range(0,14,1))
+print(new_list1)
+
