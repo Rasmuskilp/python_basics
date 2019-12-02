@@ -50,8 +50,16 @@ print(new_list)
     #defined using (object,object)
 mortal_enemies = ('Mario','Sailormoon','Moon cake','Jerry','Berry')
 print(type(mortal_enemies))
-mortal_enemies[0] = 'Goku'
+#mortal_enemies[0] = 'Goku'
 
 new_list1 = list(range(0,14,1))
 print(new_list1)
-
+#example of creating list for survival
+list_of_kit = []
+item_1 = input('what is your first item to keep?')
+list_of_kit.append(item_1)
+item_2 = input('what is your first item to keep?2')
+list_of_kit.append(item_2)
+item_3 = input('what is your first item to keep?2')
+list_of_kit.append(item_3)
+print('Hey there partner ! You have lots of new stuff!')
