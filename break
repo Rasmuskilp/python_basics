@@ -1,0 +1,54 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex a47a21a..83c8946 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -11,4 +11,7 @@[m [mthings we did :[m
+ - git status[m
+  - to check status of current files i.e whether it is added, (un)commited[m
+  things in python[m
+[31m- - how to run file[m
+\ No newline at end of file[m
+[32m+[m[32m - how to run file[m
+[32m+[m[32m ##if you dont know sth about Python[m
+[32m+[m[32m docs.python.org/3/library[m
+[32m+[m[32m shows all the built in functions[m
+\ No newline at end of file[m
+[1mdiff --git a/python_basics_102_strings.py b/python_basics_102_strings.py[m
+[1mindex 721cbef..1919b4e 100644[m
+[1m--- a/python_basics_102_strings.py[m
+[1m+++ b/python_basics_102_strings.py[m
+[36m@@ -18,4 +18,33 @@[m [mprint('welcome <person>, you were born on the year <date_birth>')[m
+ #this is our actual interpolation[m
+ print(f'welcome {nom}, you are {age} old')[m
+ print(f'welcome {nom}, you were born on the year {2019 - age}')[m
+[32m+[m[32mprint('welcome {}, you were born on the year {}'.format(nom,age))[m
+ ##useful methods for strings[m
+[32m+[m[32mexample_string = "       HELLoo             "[m
+[32m+[m[32mprint(example_string)[m
+[32m+[m[32m#removes trailing white spaces[m
+[32m+[m[32mprint(example_string.strip())[m
+[32m+[m[32m#counts the number of characters specified[m
+[32m+[m[32mprint(example_string.count('L'))[m
+[32m+[m[32m#lower decapitalises[m
+[32m+[m[32mprint(example_string.lower())[m
+[32m+[m[32m#upper capitalises[m
+[32m+[m[32mprint(example_string.upper())[m
+[32m+[m[32m#capitalises the 1st letter[m
+[32m+[m[32mprint(example_string.strip().capitalize()) # chaining methods[m
+[32m+[m[32m# standard builtin function len()[m
+[32m+[m[32mprint(len(example_string))[m
+[32m+[m[32m#learning and using .split()[m
+[32m+[m[32m#.split(), splits the item into seprate strings, by using the specified delimiter[m
+[32m+[m[32mtext_to_split = ('this is some example text in our file')[m
+[32m+[m[32mresults_split = text_to_split.split(' ')[m
+[32m+[m[32mprint(results_split)[m
+[32m+[m[32m#Castin and int[m
+[32m+[m[32mstr_string = '1990'[m
+[32m+[m[32m#type tells you the type of the variable i.e string,int, flaot[m
+[32m+[m[32mprint(type(str_string))[m
+[32m+[m[32mint_number = int(str_string)[m
+[32m+[m[32mprint(type(int_number))[m
+[32m+[m[32m#int --> str[m
+[32m+[m[32mnew_str = str(int_number)[m
+[32m+[m[32mprint(new_str)[m
+\ No newline at end of file[m
